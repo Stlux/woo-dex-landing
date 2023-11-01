@@ -444,6 +444,19 @@ nav {
   border-radius: 10px;
 }
 
+.navbar-toggler {
+  border: 1px solid white !important;
+  color: white;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.navbar-toggler span {
+  position: absolute;
+  top: 8px;
+  left: 4px;
+}
+
 .contact-form form *:not(.inline-elements) > * {
   display: block;
 }
@@ -628,6 +641,19 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
   }
+  nav .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .d-flex {
+    margin-top: 0px !important;
+  }
+  nav .navbar-nav {
+    flex-direction: row !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
 }
 @media screen and (max-width: 769px) {
   .blockchains-icons {
@@ -730,6 +756,17 @@ footer a {
     left: 19px;
     top: 14px;
   }
+  nav .navbar-nav:first-child {
+    display: none;
+  }
+  nav .navbar-nav {
+    margin-left: auto;
+  }
+  nav .btn-sign span {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+  }
 }
 @media screen and (max-width: 576px) {
   .left-part h1, .left-part p {
@@ -776,10 +813,40 @@ footer a {
     align-self: center;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .section-seventh-screen .socials-link .social .btn-default {
     width: 120px;
     padding: 10px 10px;
+  }
+  nav .nav-item {
+    width: 64px;
+  }
+  nav .navbar-brand {
+    width: 72px;
+  }
+  nav .btn-default {
+    padding: 0px 15px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    font-size: 14px;
+  }
+  nav .btn-sign {
+    height: 50px;
+    width: 50px;
+  }
+  nav .btn-sign span {
+    top: 8px;
+  }
+}
+@media screen and (max-width: 350px) {
+  nav .btn-default {
+    padding: 0px 10px !important;
+  }
+  nav .navbar-brand {
+    width: 50px;
+  }
+  nav .navbar-brand img {
+    width: 80px;
   }
 }
 

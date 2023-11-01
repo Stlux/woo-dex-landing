@@ -483,6 +483,20 @@ nav{
     border-radius: 10px;
 }
 
+.navbar-toggler{
+    border: 1px solid white !important;
+    color: white;
+    width: 40px;
+    height: 40px;
+    position: relative;
+
+    span{
+        position: absolute;
+        top: 8px;
+        left: 4px;
+    }
+}
+
 .contact-form{
     form{
         *:not(.inline-elements) > * {
@@ -710,6 +724,25 @@ footer{
             }
         }
     }
+
+    nav{
+        .navbar-collapse{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .d-flex {
+            margin-top: 0px !important;
+        }
+
+        .navbar-nav{
+            flex-direction: row !important;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: fit-content;
+        }
+    }
+    
 }
 
 
@@ -840,6 +873,20 @@ footer{
             }
         }
     }
+    nav{
+        .navbar-nav:first-child{
+            display: none;
+        }
+        .navbar-nav{
+            margin-left: auto;
+        }
+        .btn-sign span {
+            position: absolute;
+            top: 13px;
+            left: 13px;
+        }
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -903,7 +950,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .section-seventh-screen{
         .socials-link{
             .social{
@@ -914,5 +961,48 @@ footer{
             }
         }
     }
+
+    nav{
+        .nav-item{
+            width: 64px;
+        }
+
+        .navbar-brand{
+            width: 72px;
+        }
+        
+        .btn-default {
+            padding: 0px 15px !important;
+            height: 50px !important;
+            line-height: 50px !important;
+            font-size: 14px;
+        }
+
+        .btn-sign{
+            height: 50px;
+            width: 50px;
+
+            span{
+                top: 8px;
+            }
+        }
+        
+    }
     
+}
+
+@media screen and (max-width: 350px) {
+    nav{
+        .btn-default {
+            padding: 0px 10px !important;
+        }
+
+        .navbar-brand{
+            width: 50px;
+
+            img{
+                width: 80px;
+            }
+        }
+    }
 }
