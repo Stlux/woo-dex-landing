@@ -155,9 +155,10 @@ nav{
     font-size: 22px;
 
     span{
-        position: absolute;
-        top: 10px;
-        left: 9px;
+        position: relative;
+        color: white;
+        top: 11px;
+        left: 12px;
     }
 }
 
@@ -180,8 +181,11 @@ nav{
 .btn-updated, .btn-sign-updated{
     background: rgb(35,54,196);
     background: linear-gradient(214deg, rgba(35,54,196,1) 0%, rgba(31,127,215,1) 21%, rgba(5,228,207,1) 100%);
-    color: #000;
     transition: 0.2s;
+
+    span{
+        color: #000;
+    }
 }
 
 .btn-updated:hover{
@@ -411,7 +415,7 @@ nav{
 }
 
 .partners-item{
-    display: inline-block;
+    display: inline-flex;
     background: #2d2c307c;
     backdrop-filter: blur(3px);
     border-radius: 10px;
@@ -421,9 +425,10 @@ nav{
 }
 
 .partners-item-img{
-    position: absolute;
-    width: 65%;
+    position: relative;
+    width: auto;
     top: 50%;
+    height: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
