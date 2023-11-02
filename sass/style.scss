@@ -606,6 +606,7 @@ footer{
     .addition-features-card{
         margin-left: 10px;
         margin-right: 10px;
+        position: relative;
 
         .inline-elements{
             position: absolute;
@@ -885,10 +886,14 @@ footer{
         .navbar-nav{
             margin-left: auto;
         }
-        .btn-sign span {
-            position: absolute;
-            top: 13px;
-            left: 13px;
+        .btn-sign{
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
         }
     }
     
