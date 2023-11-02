@@ -775,6 +775,9 @@ footer a {
     top: 14px;
     left: 17px;
   }
+  .background-wrapper {
+    background-image: url("../assets/bg-mob.png");
+  }
 }
 @media screen and (max-width: 576px) {
   .left-part h1, .left-part p {
