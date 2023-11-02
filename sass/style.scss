@@ -844,7 +844,7 @@ footer{
         width: 100%;
     }
 
-    .addition-features-card, .socials-link{
+    .addition-features-card, .apr-header, .socials-link{
         .btn-default {
             width: 200px;
             text-align: center;
@@ -906,6 +906,18 @@ footer{
         }
     }
 
+    h3 {
+        font-size: 38px !important;
+    }
+
+    .apr-header{
+        .btn-sign{
+            span {
+                left: 0px;
+            }
+        }
+    } 
+
     .arp-item-bottom img {
         left: 34px;
     }
@@ -956,6 +968,15 @@ footer{
     .social-top{
         align-self: center;
     }
+
+    .advantages{
+        .advantage-item {
+            border-bottom: 1px dotted #aeaeae;
+        }
+        .advantage-item:last-child{
+            border-bottom: none !important;
+        }
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -967,6 +988,14 @@ footer{
                     padding: 10px 10px;
                 }
             }
+        }
+    }
+
+    .apr-header{
+        h3{
+            max-width: 325px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
