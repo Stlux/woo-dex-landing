@@ -673,8 +673,8 @@ footer a {
     width: 60px;
   }
   .left-part span {
-    top: 13px;
-    left: 15px;
+    top: 15px;
+    left: 17px;
   }
   .main-data-container {
     margin-top: 75px;
@@ -846,7 +846,8 @@ footer a {
     width: 50px;
   }
   nav .btn-sign span {
-    top: 8px;
+    top: 10px;
+    left: 12px;
   }
 }
 @media screen and (max-width: 350px) {

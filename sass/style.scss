@@ -766,8 +766,8 @@ footer{
     }
     .left-part{
         span{
-            top: 13px;
-            left: 15px;
+            top: 15px;
+            left: 17px;
         }
     }
     .main-data-container{
@@ -840,7 +840,7 @@ footer{
         width: 218px;
 
         .arp-value, .arp-item-top{
-            font-size: 18px;;
+            font-size: 18px;
         }
     }
 
@@ -899,7 +899,6 @@ footer{
     .background-wrapper{
         background-image: url("../assets/bg-mob.png");
     }
-    
 }
 
 @media screen and (max-width: 576px) {
@@ -996,7 +995,8 @@ footer{
             width: 50px;
 
             span{
-                top: 8px;
+                top: 10px;
+                left: 12px;
             }
         }
         
