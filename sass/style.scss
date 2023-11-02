@@ -182,10 +182,6 @@ nav{
     background: rgb(35,54,196);
     background: linear-gradient(214deg, rgba(35,54,196,1) 0%, rgba(31,127,215,1) 21%, rgba(5,228,207,1) 100%);
     transition: 0.2s;
-
-    span{
-        color: #000;
-    }
 }
 
 .btn-updated:hover{
@@ -848,7 +844,7 @@ footer{
         width: 100%;
     }
 
-    .addition-features-card, .apr-header, .socials-link{
+    .addition-features-card, .socials-link{
         .btn-default {
             width: 200px;
             text-align: center;

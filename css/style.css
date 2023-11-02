@@ -166,9 +166,6 @@ nav {
   background: linear-gradient(214deg, rgb(35, 54, 196) 0%, rgb(31, 127, 215) 21%, rgb(5, 228, 207) 100%);
   transition: 0.2s;
 }
-.btn-updated span, .btn-sign-updated span {
-  color: #000;
-}
 
 .btn-updated:hover {
   background: rgba(45, 44, 48, 0.4862745098);
