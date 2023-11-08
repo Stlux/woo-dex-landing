@@ -2,11 +2,10 @@
 
 $main-font: 'Righteous', sans-serif;
 $secondary-font: 'Space Grotesk', sans-serif;
-
 $main-header-font-size: 90px;
 $main-p-font-size: 22px;
-
 $text-main-color: white;
+$main-bg-color: #2d2c307c;
 
 *{
     margin: 0;
@@ -105,15 +104,15 @@ nav{
 
 .nav-item {
     .nav-link{
-        color: white;
+        color: $text-main-color;
         transition: 0.2s ease-in;
         border-radius: 100px;
         backdrop-filter: blur(3px);
     }
     .active, .nav-link:hover{
-        background: #2d2c307c !important;
+        background: $main-bg-color !important;
         border-radius: 100px;
-        color: white;
+        color: $text-main-color;
     }
     .active{
         backdrop-filter: blur(3px);
@@ -134,8 +133,8 @@ nav{
     padding: 10px 30px;
     border: none;
     height: 50px;
-    background: #2d2c307c;
-    color: white;
+    background: $main-bg-color;
+    color: $text-main-color;
     transition: 0.2s;
     line-height: 30px;
 }
@@ -148,7 +147,7 @@ nav{
 .btn-sign{
     height: 50px;
     width: 50px;
-    background: #2d2c307c;
+    background: $main-bg-color;
     backdrop-filter: blur(3px);
     border-radius: 100px;
     margin-left: 5px;
@@ -156,7 +155,7 @@ nav{
 
     span{
         position: relative;
-        color: white;
+        color: $text-main-color;
         top: 11px;
         left: 12px;
     }
@@ -185,8 +184,8 @@ nav{
 }
 
 .btn-updated:hover{
-    background: #2d2c307c;
-    color: white;
+    background: $main-bg-color;
+    color: $text-main-color;
 }
 
 .blockchains-icons{
@@ -226,7 +225,7 @@ nav{
 .break-line{
     height: 189px;
     width: 2px;
-    background: white;
+    background: $text-main-color;
     opacity: 0.1;
 }
 
@@ -366,7 +365,7 @@ nav{
 .trade-platform-wrapper{
     width: 100%;
     padding: 30px;
-    background: #2d2c307c;
+    background: $main-bg-color;
     backdrop-filter: blur(3px);
     border-radius: 20px;
     margin-top: 50px;
@@ -384,15 +383,15 @@ nav{
 
 @keyframes move {
     from {
-      transform: translateX(0%);
+        transform: translateX(0%);
     }
     50% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
     100%{
-       transform: translateX(0%);
+        transform: translateX(0%);
     }
-  }
+}
 
 .section-sixth-screen{
     overflow: hidden;
@@ -412,7 +411,7 @@ nav{
 
 .partners-item{
     display: inline-flex;
-    background: #2d2c307c;
+    background: $main-bg-color;
     backdrop-filter: blur(3px);
     border-radius: 10px;
     margin: 0px 20px;
@@ -454,7 +453,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #2d2c307c;
+    background: $main-bg-color;
     backdrop-filter: blur(3px);
     border-radius: 10px;
     width: 280px;
@@ -479,14 +478,14 @@ nav{
     height: 100%;
     width: 100%;
     padding: 40px;
-    background: #2d2c307c;
+    background: $main-bg-color;
     backdrop-filter: blur(3px);
     border-radius: 10px;
 }
 
 .navbar-toggler{
     border: 1px solid white !important;
-    color: white;
+    color: $text-main-color;
     width: 40px;
     height: 40px;
     position: relative;
@@ -515,7 +514,7 @@ nav{
             border: none;
             background: transparent;
             border-bottom: 1px solid black;
-            color: white;
+            color: $text-main-color;
         }
 
         input:focus, input:focus-visible{
@@ -532,7 +531,7 @@ nav{
             background: #2d2c30d0;
             border: none;
             padding: 10px;
-            color: white;
+            color: $text-main-color;
         }
 
         .inline-elements{
@@ -553,7 +552,7 @@ nav{
 footer{
     margin-top: 150px;
     margin-bottom: 50px;
-    background: #2d2c307c;
+    background: $main-bg-color;
     backdrop-filter: blur(3px);
     padding: 40px !important;
     border-radius: 20px;
@@ -566,12 +565,12 @@ footer{
 .footer-about{
 
     p{
-        color: white;
+        color: $text-main-color;
     }
 }
 
 .footer-links-header{
-    color:white
+    color:$text-main-color
 }
 
 .footer-links{
@@ -742,6 +741,19 @@ footer{
             margin-top: 20px;
             margin-bottom: 20px;
             width: fit-content;
+        }
+    }
+
+
+    .section-seventh-screen{
+        .col-lg-6:first-child{
+            padding: 0;
+        }
+        .socials-link {
+            justify-content: space-between;
+        }
+        .social{
+            margin: 10px 0px;
         }
     }
     
@@ -949,6 +961,12 @@ footer{
         .copyright {
             width: 170px;
         }
+    }
+
+    .left-part{
+        max-width: 565px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .left-part h1 {

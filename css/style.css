@@ -656,6 +656,15 @@ footer a {
     margin-bottom: 20px;
     width: fit-content;
   }
+  .section-seventh-screen .col-lg-6:first-child {
+    padding: 0;
+  }
+  .section-seventh-screen .socials-link {
+    justify-content: space-between;
+  }
+  .section-seventh-screen .social {
+    margin: 10px 0px;
+  }
 }
 @media screen and (max-width: 769px) {
   .blockchains-icons {
@@ -811,6 +820,11 @@ footer a {
   }
   .footer-low-data .copyright {
     width: 170px;
+  }
+  .left-part {
+    max-width: 565px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .left-part h1 {
     font-size: 50px !important;
